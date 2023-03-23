@@ -1,0 +1,12 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Image</title>
+  </head>
+  <body>
+    <h1>Final Image</h1>
+    <p>{{ message }}</p>
+    <img src="{{ url_for('static', filename='final_images/'+final_image) }}" alt="{{ final_image }}">
+  </body>
+</html>

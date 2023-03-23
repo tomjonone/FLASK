@@ -1,0 +1,40 @@
+├── app.log
+├── app.py
+├── blended.jpg
+├── clean_images
+├── clean_images.py
+├── flask_venv
+│
+├── requirements.txt
+├── static
+├──────────────
+│             ├── blended.jpg
+│             ├── blended_pil.jpg
+│             ├── css
+│             │             └── style.css
+│             ├── favicon.ico
+│             ├── images
+│             │             ├── 2023-03-23 00:19:32.948405XXXX.jpg
+│             │             └── uploads
+│             │                 ├── 00011.jpg
+│             ├── js
+│             │             └── script.js
+│             └── videos
+│                 └── results
+│                     └── result_voice.mp4
+├── templates
+│             ├── blend_pil.html
+│             ├── flask_info.html
+│             ├── get_gallery.html
+│             ├── index.html
+│             ├── junk.txt
+│             ├── process_images.html
+│             ├── result.html
+│             ├── show_blend_pil.html
+│             ├── show_blends.html
+│             ├── upload_blends.html
+│             ├── upload_file.html
+│             └── view_thumbs.html
+└── tree.info
+
+2252 directories, 27713 files
