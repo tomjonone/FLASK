@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Display</title>
+    <style>img {
+        width: 15%;
+        height: auto;
+        border: #000000 solid 2px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Image Display</h1>
+    {% for image_filename in image_list %}
+    <img src="{{ url_for('display_image', filename=image_filename) }}" alt="Selected Image">
+    {% endfor %}
+</body>
+</html>
