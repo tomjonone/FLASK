@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Text</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+</head>
+<body>
+    <h1>Generate Text</h1>
+    <form method="post" action="/save_text">
+        <textarea name="text" rows="30" cols="80"></textarea><br>
+        <input type="submit" value="Save Text">
+    </form>
+</body>
+</html>

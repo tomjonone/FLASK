@@ -1,0 +1,44 @@
+----------generate_text.html ----------
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Text</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+</head>
+<body>
+    <h1>Generate Text</h1>
+    <form method="post" action="/save_text">
+        <textarea name="text" rows="30" cols="80"></textarea><br>
+        <input type="submit" value="Save Text">
+    </form>
+</body>
+</html>
+------------- the app function -----------------------
+
+# Set the directory for saving text files
+text_history_directory = os.path.join(app.static_folder, 'text_history')
+
+@app.route('/generate_text', methods=['GET', 'POST'])
+def generate_text():
+    if request.method == 'POST':
+        return redirect(url_for('save_text'))
+
+    return render_template('generate_text.html')
+
+@app.route('/save_text', methods=['POST'])
+def save_text():
+    text = request.form.get('text', '')
+
+    if text:
+        # Generate a filename based on the current timestamp
+        timestamp_filename = f"{int(time.time())}.txt"
+        file_path = os.path.join(text_history_directory, timestamp_filename)
+
+        # Save the entered text to the file
+        with open(file_path, 'w') as text_file:
+            text_file.write(text)
+
+        return "Text saved successfully!"
+    else:
+        return "No text provided."

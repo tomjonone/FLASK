@@ -1,11 +1,19 @@
 #!/home/jack/Desktop/YOUTUBE_video/flask_env/bin/python
 from flask import Flask, render_template, send_from_directory
 import os
-
+import random
 app = Flask(__name__)
 
 # Define the image directory
 Image_Directory = "static/images/Current_Project/"
+
+
+@app.route('/image')
+def image():
+    image_dir = 'static/images'
+    image_files = [f for f in os.listdir(image_dir) if f.endswith('.jpg')]
+    random_image_file = random.choice(image_files)
+    return render_template('image.html', random_image_file=random_image_file)
 
 @app.route('/')
 def show_images():

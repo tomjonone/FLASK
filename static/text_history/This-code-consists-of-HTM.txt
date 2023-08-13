@@ -1,0 +1,5 @@
+This code consists of HTML and a Flask application that together create a simple web app for displaying images from a specified directory. Let's break down each part step by step:
+
+1. HTML Template (image.html):
+
+This HTML template is responsible for rendering the images on the web page. It uses a loop to iterate through the image_list and generates an <img> tag for each image filename. The url_for() function is used to generate the URL for the display_image route, passing the filename of each image as a parameter. Here's how it works:

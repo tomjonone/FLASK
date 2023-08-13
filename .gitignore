@@ -1,1 +1,3 @@
-flask_venv/
+/flask_venv/
+.git/
+/static/videos/

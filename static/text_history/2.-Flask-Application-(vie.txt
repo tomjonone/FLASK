@@ -1,0 +1,20 @@
+2. Flask Application (view.py):
+
+The Flask application is responsible for handling HTTP requests and serving the HTML templates and image files. Let's go through each route and function step by step:
+
+    Import Libraries:
+        from flask import Flask, render_template, send_from_directory: Import the necessary modules from Flask to create the web app.
+
+    Create the Flask App:
+        app = Flask(__name__): Create a Flask app instance.
+
+    Define the Image Directory:
+        Image_Directory = "static/images/Current_Project/": Define the path to the directory where your images are stored.
+
+    Show Images Route:
+        @app.route('/IMAGES'): This route listens for requests at the /IMAGES URL path.
+        show_images(): This function is called when the /IMAGES route is accessed.
+        Inside the function:
+            image_list = os.listdir(Image_Directory): Get a list of all filenames in the Image_Directory.
+            [filename for filename in image_list if filename.endswith(".jpg")]: Filter the list to include only filenames that end with ".jpg".
+            return render_template('image.html', image_list=image_list): Render the image.html template, passing the filtered image_list to it.
