@@ -1,0 +1,16 @@
+
+alsamixer
+arecord -f cd -D plughw:0,0 recording.wav
+aplay recording.wav
+sudo alsa force-reload
+arecord -f cd -D plughw:0,0 recording.wav
+pgrep -af arecord
+sudo alsa force-reload
+lsof /dev/snd/*
+systemctl --user restart pulseaudio
+lsof /dev/snd/*
+sudo alsa force-reload
+pgrep -af arecord
+arecord -f cd -D plughw:0,0 recording.wav
+aplay recording.wav
+history 100 >> terminal.commands

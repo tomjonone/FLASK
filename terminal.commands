@@ -1,0 +1,100 @@
+34241  git commit -m "update requirements.txt"
+34242  git push
+34243  ls
+34244  source flask_venv/bin/activate
+34245  conda deactivate
+34246  ls -rant
+34247  code .
+34248  git add .
+34249  ls -rant
+34250  nano .gitignore
+34251  git add .
+34252  git commit -m "added images"
+34253  git push
+34254  python app.py
+34255  python view.py
+34256  mkdir Log
+34257  source /home/jack/Desktop/FLASK/flask_venv/bin/activate
+34258  nano check_file_size
+34259  source /home/jack/Desktop/FLASK/flask_venv/bin/activate
+34260  nano check_file_size
+34261  source /home/jack/Desktop/FLASK/flask_venv/bin/activate
+34262  chmod +x check_file_size
+34263  ./check_file_size
+34264  nano .gitignore
+34265  git add .
+34266  git commit -m "added a directory to gitignore"
+34267  git push
+34268  cp MemMaker2 StoryMaker
+34269  chmod +x StoryMaker
+34270  ./StoryMaker
+34271  cp /home/jack/Desktop/StoryMaker/search.py .
+34272  ./StoryMaker
+34273  ls static/chat/conversations.json
+34274  ls static/
+34275  ./StoryMaker
+34276  mkdir Logs
+34277  ./StoryMaker
+34278  ls check_file_size
+34279  cp check_file_size /usr/local/bin/
+34280  check_file_size
+34281  2
+34282  check_file_size
+34283  nano .gitignore
+34284  git add .
+34285  git commit -m "included videos"
+34286  git push
+34287  nano .gitignore
+34288  nano STARTenv
+34289  chmod +x STARTenv
+34290  ./STARTenv
+34291  nano STARTenv
+34292  ./STARTenv
+34293  nano STARTenv
+34294  pwd
+34295  nano STARTenv
+34296  ./STARTenv
+34297  nano STARTenv
+34298  ./STARTenv
+34299  nano STARTenv
+34300  source ~/.bashrc
+34301  nano STARTenv
+34302  ./STARTenv
+34303  nano STARTenv
+34304  ./STARTenv
+34305  nano STARTenv
+34306  ./STARTenv
+34307  source /home/jack/Desktop/FLASK/flask_venv/bin/activate
+34308  conda deactivate
+34309  rm STARTenv
+34310  ls
+34311  ls *
+34312  ls */
+34313  ls --ignore='*.*'
+34314  ls
+34315  ls -rant
+34316  python view.py
+34317  alsamixer
+34318  arecord -f cd -D plughw:0,0 recording.wav
+34319  aplay recording.wav
+34320  arecord -f cd -D plughw:0,0 recording.wav
+34321  aplay recording.wav
+34322  arecord -f cd -D plughw:0,0 recording.wav
+34323  aplay recording.wav
+34324  arecord -f cd -D plughw:0,0 recording.wav
+34325  aplay recording.wav
+34326  arecord -f cd -D plughw:0,0 recording.wav
+34327  aplay recording.wav
+34328  arecord -f cd -D plughw:0,0 recording.wav
+34329  sudo alsa force-reload
+34330  arecord -f cd -D plughw:0,0 recording.wav
+34331  pgrep -af arecord
+34332  sudo alsa force-reload
+34333  lsof /dev/snd/*
+34334  systemctl --user restart pulseaudio
+34335  lsof /dev/snd/*
+34336  sudo alsa force-reload
+34337  pgrep -af arecord
+34338  arecord -f cd -D plughw:0,0 recording.wav
+34339  aplay recording.wav
+34340  history 100 >> terminal.commands
